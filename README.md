@@ -1,56 +1,113 @@
-# PhiSiFi
 <p align="center">
-<a href="https://github.com/p3tr0s/PhiSiFi/"><img title="Tool" src="https://img.shields.io/badge/Tool-PhiSiFi-green"></a>
-<img title="Version" src="https://img.shields.io/badge/Version-1.0-green">
-<img title="Support" src="https://img.shields.io/badge/Support-No-red">
+  <img src="https://raw.githubusercontent.com/duttasunanda/PhiSiFi/main/assets/phisiwe-banner.png" alt="PhiSiFi Banner" width="100%">
 </p>
 
-## A franken baby of [M1z23R/ESP8266-EvilTwin](https://github.com/M1z23R/ESP8266-EvilTwin) and [adamff1/ESP8266-Captive-Portal](https://github.com/adamff1/ESP8266-Captive-Portal).
+<h1 align="center">🔥 PhiSiFi 🔥</h1>
 
-<img src="https://user-images.githubusercontent.com/32341044/202444452-3e7c9ab0-1643-4996-8319-18b8c25544fa.jpg"></img><br>
+<p align="center">
+  <b>WiFi Penetration Testing Tool using ESP8266</b> <br>
+  <i>Combines Deauthentication & Evil Twin Attacks in One Powerful Package</i>
+</p>
 
-It uses an ESP8266 to attack a WiFi network using Deauther && || Evil-Twin AP method.
+<p align="center">
+  <img src="https://img.shields.io/github/license/duttasunanda/PhiSiFi?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/stars/duttasunanda/PhiSiFi?style=for-the-badge" alt="Stars">
+  <img src="https://img.shields.io/github/forks/duttasunanda/PhiSiFi?style=for-the-badge" alt="Forks">
+</p>
 
-## FEATURES :
-* Deauthentication of a target WiFi access point
-* Evil-Twin AP to capture passwords with password verification against the og access point
-* It can do both attacks at the same time, no toggling of the deauther is required. 
+---
 
-## DISCLAIMER
-The source code given in this public repo is for educational use only and should only be used against your own networks and devices!<br>
-Please check the legal regulations in your country before using it.
+## 🚀 Overview
 
-## Install using Arduino IDE
-1. Install Arduino IDE
-2. In Arduino go to `File` -> `Preferences` add this URL to `Additional Boards Manager URLs` ->
-   `https://raw.githubusercontent.com/SpacehuhnTech/arduino/main/package_spacehuhn_index.json`  
-3. In Arduino go to `Tools` -> `Board` -> `Boards Manager` search for and install the `deauther` package  
-4. Download and open [PhiSiFi](https://github.com/p3tr0s/PhiSiFi/blob/main/ESP8266_PhiSiFi.ino) with Arduino IDE
-6. Select an `ESP8266 Deauther` board in Arduino under `tools` -> `board`
-7. Connect your device and select the serial port in Arduino under `tools` -> `port`
-8. Click Upload button
+**PhiSiFi** is a lightweight yet powerful firmware for the **ESP8266 NodeMCU**, built for **ethical WiFi penetration testing**. It allows users to **run Deauthentication Attacks** and simultaneously host an **Evil Twin Access Point** to capture credentials and test network vulnerabilities.
 
-# How to use:
-- Connect to the AP named `WiPhi_34732` with password `d347h320` from your phone/PC.
-- Select the target AP you want to attack (list of available APs refreshes every 30secs - page reload is required).
-- Click the Start Deauthing button to start kicking devices off the selected network.
-- Click the Start Evil-Twin button and optionally reconnect to the newly created AP named same as your target (will be open).
-- You can stop any of the attacks by visiting `192.168.4.1/admin` while conected to Evil-Twin AP or by resetting the ESP8266.
-- Once a correct password is found, AP will be restarted with default ssid `WiPhi_34732` / `d347h320` and at the bottom of a table you should be able to see something like "Successfully got password for - `TARGET_SSID` - `PASSWORD`
-   - If you power down / hard reset the gathered info will be lost
- 
-# It doesn't work for me:
-- For starters, I don't really care - it's something I did for fun and a POC that worked on my test surface and I do not provide any support for.
-- Follow SpaceHuhn and read his blog https://blog.spacehuhn.com/deauth-attack-not-working to learn about the attack.
-- If you can offer some input on what you think is wrong feel free to let me know and I will try, at some point, to fix it.
+🔐 Developed by **Sunanda Dutta** for cybersecurity enthusiasts, students, and researchers.
 
-## Credits:
-* https://github.com/SpacehuhnTech/esp8266_deauther
-* https://github.com/M1z23R/ESP8266-EvilTwin
-* https://github.com/adamff1/ESP8266-Captive-Portal
+> ⚠️ For educational and authorized testing only. Unauthorized use is prohibited.
 
-## License 
-This software is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+---
 
-## Donation / Support / Appreciation
-<a href="https://www.buymeacoffee.com/p3tr0s"><img src="https://static.vecteezy.com/system/resources/previews/025/222/157/original/shawarma-sandwich-isolated-on-transparent-background-png.png"></a>
+## 🧩 Features
+
+✅ Simultaneous **Deauth + Evil Twin** attack  
+✅ Captures and verifies WiFi passwords  
+✅ Web-based control panel (via captive portal)  
+✅ Custom AP credentials (WiPhi_####)  
+✅ No PC needed after setup — works standalone
+
+---
+
+## 🛠️ Setup Guide (Arduino IDE)
+
+### 📌 Prerequisites
+
+- Arduino IDE: [Download](https://www.arduino.cc/en/software)
+- Board URL:
+
+### 📥 Installation Steps
+
+1. Open **Arduino IDE**
+2. Go to **File → Preferences** and paste the above board URL
+3. Go to **Tools → Board → Boards Manager** and install `Deauther`
+4. Clone this repo:  
+
+5. Open the `.ino` file inside Arduino
+6. Select `ESP8266 Deauther` as board
+7. Choose the correct **COM port**
+8. Hit **Upload**
+
+---
+
+## 🌐 How to Use
+
+1. **Power your ESP8266**
+2. Connect to WiFi:  
+📶 SSID: `WiPhi_34732`  
+🔑 Password: `d347h320`
+3. Visit `http://192.168.4.1`
+4. Scan and select a target network
+5. Click **Start Deauthing** or **Start Evil-Twin**
+6. Capture and verify credentials
+7. To stop, visit `http://192.168.4.1/admin` or reboot the board
+
+---
+
+## 🖼️ Interface Preview
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/duttasunanda/PhiSiFi/main/assets/screenshot-ui.png" width="80%" alt="PhiSiFi UI">
+</p>
+
+---
+
+## 📚 Credits
+
+- [ESP8266 Deauther – SpacehuhnTech](https://github.com/SpacehuhnTech/esp8266_deauther)  
+- [ESP8266 Evil Twin – M1z23R](https://github.com/M1z23R/ESP8266-EvilTwin)  
+- [ESP8266 Captive Portal – adamff1](https://github.com/adamff1/ESP8266-Captive-Portal)
+
+---
+
+## 👩‍💻 Author
+
+Made with ❤️ by **Sunanda Dutta**  
+🔗 [GitHub Profile](https://github.com/duttasunanda)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🌟 Support the Project
+
+If you found **PhiSiFi** useful:
+
+🌟 Star the repo  
+🍴 Fork it  
+📢 Share with fellow hackers
+
+---
+
