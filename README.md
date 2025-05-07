@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/duttasunanda/PhiSiFi/main/assets/phisiwe-banner.png" alt="PhiSiFi Banner" width="100%">
 </p>
 
-<h1 align="center">🔥 PhiSiFi 🔥</h1>
+<h1 align="center">🔥 ZenInfiny 🔥</h1>
 
 <p align="center">
   <b>WiFi Penetration Testing Tool using ESP8266</b> <br>
