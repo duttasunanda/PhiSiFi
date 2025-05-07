@@ -42,8 +42,7 @@
 ### 📌 Prerequisites
 
 - Arduino IDE: [Download](https://www.arduino.cc/en/software)
-- Board URL:
-
+- Board URL:  [Buy](https://robu.in/product/nodemcu-cp2102-board/)
 ### 📥 Installation Steps
 
 1. Open **Arduino IDE**
@@ -62,8 +61,8 @@
 
 1. **Power your ESP8266**
 2. Connect to WiFi:  
-📶 SSID: `WiPhi_34732`  
-🔑 Password: `d347h320`
+📶 SSID: `ZenInfiny`  
+🔑 Password: `ZenInfiny123`
 3. Visit `http://192.168.4.1`
 4. Scan and select a target network
 5. Click **Start Deauthing** or **Start Evil-Twin**
