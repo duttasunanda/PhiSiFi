@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/duttasunanda/PhiSiFi/main/assets/phisiwe-banner.png" alt="PhiSiFi Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/duttasunanda/PhiSiFi/main/banner.png" alt="ZenInfiny Banner" width="100%">
 </p>
 
 <h1 align="center">🔥 ZenInfiny 🔥</h1>
@@ -10,9 +10,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/duttasunanda/PhiSiFi?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/stars/duttasunanda/PhiSiFi?style=for-the-badge" alt="Stars">
-  <img src="https://img.shields.io/github/forks/duttasunanda/PhiSiFi?style=for-the-badge" alt="Forks">
+  <img src="https://github.com/duttasunanda/Wifi_Hack/blob/main/LICENSE?style=for-the-badge" alt="License">
+  <img src="https://github.com/duttasunanda?tab=stars?style=for-the-badge" alt="Stars">
+  <img src="https://github.com/duttasunanda/Wifi_Hack/forks?style=for-the-badge" alt="Forks">
 </p>
 
 ---
@@ -74,7 +74,7 @@
 ## 🖼️ Interface Preview
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/duttasunanda/PhiSiFi/main/assets/screenshot-ui.png" width="80%" alt="PhiSiFi UI">
+<img src="https://raw.githubusercontent.com/duttasunanda/PhiSiFi/main/screenshot.png" width="80%" alt="ZenInfiny UI">
 </p>
 
 ---
